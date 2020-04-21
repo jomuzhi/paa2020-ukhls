@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!--
+Font-awesome icons ie github or twitter
+-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+
+<!--
+Google fonts api stuff
+-->
+
+
+<meta name="date" content="2020-04-20" />
+<title>Marriage, Parenthood, and Gendered Time Allocation in Great Britain</title>
+
+
+
+
+
+<style>
+@page {
+size: 45in 38in;
+margin: 0;
+padding: 0;
+}
+body {
+margin: 0;
+font-size: 45px;
+width: 45in;
+height: 38in;
+padding: 0;
+text-align: justify;
+font-family: Palatino;
+}
+.poster_wrap {
+width: 45in;
+height: 38in;
+padding: 0cm;
+}
+.title_container {
+width: 45in;
+height: calc(38in * 0.15);
+overflow: hidden;
+background-color: #002147;
+border: 0 solid #0b4545;
+}
+.logo_left {
+float: left;
+width: 10%;
+height: 100%;
+background-color: #002147;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.logo_right {
+float: right;
+width: 10%;
+height: 100%;
+background-color: #002147;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.poster_title {
+text-align: center;
+position: relative;
+float: left;
+width: 80%;
+height: 100%;
+color: #FFFFFF;
+top: 50%;
+transform: translateY(-50%);
+-webkit-transform: translateY(-50%);
+}
+#title {
+font-family: Palatino;
+}
+/* unvisited link */
+a:link {
+color: #cc0000;
+}
+.mybreak {
+  break-before: column;
+}
+/* visited link */
+a:visited {
+color: #cc0000;
+}
+
+/* mouse over link */
+a:hover {
+color: #cc0000;
+}
+
+/* selected link */
+a:active {
+color: #cc0000;
+}
+.poster_body {
+-webkit-column-count: 3; /* Chrome, Safari, Opera */
+-moz-column-count: 3; /* Firefox */
+column-count: 3;
+-webkit-column-fill: auto;
+-moz-column-fill: auto;
+column-fill: auto;
+-webkit-column-rule-width: 1mm;
+-moz-column-rule-width: 1mm;
+column-rule-width: 1mm;
+-webkit-column-rule-style: dashed;
+-moz-column-rule-style: dashed;
+column-rule-style: dashed;
+-webkit-column-rule-color: #002147;
+-moz-column-rule-color: #002147;
+column-rule-color: #002147;
+column-gap: 1em;
+padding-left: 0.5em;
+padding-right: 0.5em;
+height: 100%;
+color: #000000
+background-color: #ffffff;
+}
+.poster_title h1 {
+font-size: 75pt;
+margin: 0;
+border: 0;
+font-weight: normal;
+}
+.poster_body_wrap{
+width: calc(45in + 0 + 0);
+height: calc(38in * 0.83);
+padding-top: calc(38in * 0.005);
+padding-bottom: calc(38in * 0.01);
+background-color: #ffffff;
+}
+.poster_title h3 {
+color: #ffffff;
+font-size: 50pt;
+margin: 0;
+border: 0;
+font-weight: normal;
+}
+.poster_title h3 > sup {
+  font-size: 35pt;
+  margin-left: 0.02em;
+}
+.poster_title h5 {
+color: #FFFFFF;
+font-size: 35pt;
+margin: 0;
+border: 0;
+font-weight: normal;
+}
+img {
+margin-top: 2cm;
+margin-bottom: 0;
+}
+.section {
+  padding: 0.2em;
+}
+.poster_body h1 {
+text-align: center;
+color: #FFFFFF;
+font-size: 65pt;
+border: 2mm solid #002147;
+background-color: #002147;
+border-radius: 4mm 0mm;
+margin-top: 2mm;
+margin-bottom: 2mm;
+font-weight: normal;
+}
+.poster_body h2 {
+color: #000000;
+font-size: 40pt;
+padding-left: 4mm;
+font-weight: normal;
+}
+.span {
+width: 200%;
+}
+/* center align leaflet map,
+from https://stackoverflow.com/questions/52112119/center-leaflet-in-a-rmarkdown-document */
+.html-widget {
+margin: auto;
+position: sticky;
+margin-top: 2cm;
+margin-bottom: 2cm;
+}
+.leaflet.html-widget.html-widget-static-bound.leaflet-container.leaflet-touch.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
+position: sticky;
+width: 100%;
+}
+pre.sourceCode.r {
+background-color: #dddddd40;
+border-radius: 4mm;
+padding: 4mm;
+width: 75%;
+/* align-items: center; */
+margin: auto;
+padding-left: 2cm;
+}
+code.sourceCode.r{
+background-color: transparent;
+font-size: 20pt;
+border-radius: 2mm;
+}
+.caption {
+font-size: 25pt;
+}
+.table caption {
+font-size: 25pt;
+padding-bottom: 3mm;
+
+}
+code {
+font-size: 1em;
+font-family: monospace;
+background-color: #00808024;
+color: #002147;
+padding: 1.2mm;
+border-radius: 2mm;
+}
+.poster_title code {
+font-size: 1em;
+}
+table {
+font-size: 40px;
+margin: auto;
+border-top: 3px solid #666;
+border-bottom: 3px solid #666;
+}
+table thead th {
+border-bottom: 3px solid #ddd;
+}
+td {
+padding: 8px;
+}
+th {
+padding: 15px;
+}
+caption {
+margin-bottom: 10px;
+}
+.poster_body p {
+margin-right: 4mm;
+margin-left: 4mm;
+margin-top: 6mm;
+margin-bottom: 10mm;
+}
+.poster_body ol {
+margin-right: 4mm;
+margin-left: 4mm;
+}
+#ul {
+margin-right: 4mm;
+margin-left: 4mm;
+}
+.references p {
+font-size: 20pt;
+}
+.orcid img {
+  width: 1em;
+}
+</style>
+</head>
+<body>
+
+
+<div class="poster_wrap">
+<div class="title_container">
+<!-- Left Logo  -->
+<div class="logo_left">
+<img src= 'Oxford-logo.png' style="width: 80%">
+</div>
+<!-- Poster Title -->
+<div class= "poster_title">
+<h1 id="title">Marriage, Parenthood, and Gendered Time Allocation in Great Britain</h1>
+<h3 id="author"><strong>Muzhi Zhou</strong><sup>, <a class="orcid" href="https://orcid.org/0000-0001-5488-206X"><img src="https://raw.githubusercontent.com/brentthorne/posterdown/master/images/orcid.jpg"></a></sup>, Man-Yee Kan<sup></sup></h3><br>
+<h5 id="affiliation"><sup></sup> Department of Sociology, University of Oxford</h5>
+</div>
+<!-- Right Logo  -->
+<div class="logo_right">
+<img src=LOGO_ERC.png style="width: 80%">
+</div>
+</div>
+
+<div class='poster_body_wrap'>
+<div class='poster_body'>
+<div id="research-question" class="section level1 block">
+<h1>1. Research Question</h1>
+<p>What are the <strong>dynamics</strong> in paid work time and housework time for women and men during the family formation process?</p>
+<p>Have these changes in paid work time and housework time associated with family formation <strong>changed</strong> in the past three decades in the UK?</p>
+</div>
+<div id="introduction" class="section level1">
+<h1>2. Introduction</h1>
+<p>Given that women’s educational levels are similar or even higher than men’s in almost all the OECD countries (<span class="citation">OECD (<a href="#ref-oecd2015" role="doc-biblioref">2015</a>)</span>), the enlarged gender gap in both paid and unpaid work during the family formation process has become a major concern.<br />
+<img src="Fig1_descage_p0.png" style="width:70.0%" /></p>
+<p>Figure 1: LOWESS plot of weekly paid work and housework hours by age and family status (source: see the Data and Sample section).</p>
+<p>There is a lack of comprehensive evaluation of the theories and the fact that could explain the enlarged gender gap in time use during the family formation process.</p>
+</div>
+<div id="research-design" class="section level1">
+<h1>3. Research Design</h1>
+<p>Data that follow the same individual over the life course, with their time spent on paid work and housework and marital and parenthood status information. <strong>Fixed-effect linear (FE)</strong> regressions to predict the change in the time use associated with changes in family status.</p>
+<p><strong>Static model</strong>: Assumes a one-off change when people shift their family status:</p>
+<p><span class="math inline">\(Hour_{it}=βMarital_{it}+γParent_{it}+λZ_{it}+ϑ_i+ε_{it}\)</span></p>
+<p><strong>Process model</strong>: Examine changes surrounding the transitions and over the course of marriage &amp; parenthood:</p>
+<div class="figure-example">
+<p><span class="math inline">\(Hour_{it}=β_0Marital_{it}+β_1Duration_{it}+β_2Duration_{it}^2\)</span>
+<span class="math inline">\(+γ_0 Parent_{it}+γ_1ChildAge_{it}+γ_2ChildAge_{it}^2\)</span>
+<span class="math inline">\(+λZ_{it}+ϑ_i+ε_{it}\)</span></p>
+</div>
+<p>FE assumes that people selected into marriage/parenthood (treatment group) experience the same time use growth paths as those who are not (control group). To relext this assumption, we also use <strong>fixed-effect individual-slope (FEIS)</strong> regressions. This method consideres the potential of selecting people who are subject to different time use growth trends into marriage/parenthood (<span class="citation">Ludwig (<a href="#ref-ludwig2019" role="doc-biblioref">2019</a>)</span>).</p>
+</div>
+<div id="data-and-sample" class="section level1">
+<h1>4. Data and Sample</h1>
+<p>18 waves of BHPS and the first nine waves of the <span class="citation">(“Understanding Society: Waves 1-9, 2009-2018” <a href="#ref-ukhls" role="doc-biblioref">2019</a>)</span>, lasting from 1991 to 2019.</p>
+<p>Selected 11,143 individuals are observed in the period from 1992 to 2017, all started from single, never married, and non-parent status. 60% of them had repeated observation are used for the analysis. 44% of these individuals experienced transitions into marriage (34%) or cohabitation (26%) and 27% become parents.</p>
+</div>
+<div id="change-in-time-use-patterns" class="section level1">
+<h1>5. Change in Time Use Patterns</h1>
+<div class="figure-example">
+<p><img src="fig3_marriage_workhrall.png" style="width:45.0%" /> <img src="fig3_marriage_howlng.png" style="width:45.0%" /></p>
+<p>Figure 2: Change in time use as marriage forms and develops.</p>
+</div>
+<div class="figure-example">
+<p><img src="fig3_parenthood_workhrall.png" style="width:45.0%" /> <img src="fig3_parenthood_howlng.png" style="width:45.0%" /></p>
+<p>Figure 3: Change in time use when having and rearing a child.</p>
+</div>
+</div>
+<div id="change-in-the-roles-of-marriage-family" class="section level1">
+<h1>6. Change in the Roles of Marriage &amp; Family</h1>
+<div class="figure-example">
+<p><img src="fig5_marriage_workhrall.png" style="width:45.0%" /> <img src="fig5_marriage_howlng.png" style="width:45.0%" /></p>
+<p>Figure 4: Period-specific change as marriage forms and develops.</p>
+</div>
+<div class="figure-example">
+<p><img src="fig5_parenthood_workhrall.png" style="width:45.0%" /> <img src="fig5_parenthood_howlng.png" style="width:45.0%" /></p>
+<p>Figure 5: Period-specific change when having and rearing a child.</p>
+</div>
+</div>
+<div id="conclusion" class="section level1">
+<h1>7. Conclusion</h1>
+<p>Marriage enhances traditional gender roles through a more gendered <strong>housework time</strong> allocation. The effect of marriage on paid work time is limited.</p>
+<p>The strong traditionalizing role of parenthood on gendered time-use patterns is driven by the <strong>much greater move of women</strong> than that of men.</p>
+<p>Over the past three decades, the traditionalizing role of marriage has <strong>disappeared</strong>, and that of parenthood has been <strong>weakened</strong>. This is consistent with what has been documented for couples (<span class="citation">Zhou and Kan (<a href="#ref-zhou2019" role="doc-biblioref">2020</a>)</span>).</p>
+<p>Why do certain theories (e.g., the unitary and the identity perspectives) not apply well to men’s time allocation pattern but are suitable to explain women’s behaviours during the family formation process? We argue that instead of assigning women and men complementary roles, <strong>viewing women’s role to be more flexible than men’s is more helpful in understanding family at a time of heightened economic uncertainty</strong>.</p>
+</div>
+<div id="contact-information" class="section level1">
+<h1>8. Contact Information</h1>
+<p>This work was supported by the European Research Council(ERC), [grant #:771736] to Prof. Man-Yee Kan.</p>
+<ul>
+<li>Email: <a href="mailto:muzhi.zhou@sociology.ox.ac.uk" class="email">muzhi.zhou@sociology.ox.ac.uk</a></li>
+<li>twitter: jomuzhi
+-GitHub: <a href="https://github.com/jomuzhi" class="uri">https://github.com/jomuzhi</a></li>
+</ul>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>9. References</h1>
+<div id="refs" class="references">
+<div id="ref-ludwig2019">
+<p>Ludwig, Volker. 2019. “XTFEIS: Stata Module to Estimate Linear Fixed-Effects Model with Individual-Specific Slopes (Feis).”</p>
+</div>
+<div id="ref-oecd2015">
+<p>OECD. 2015. “Education at a Glance 2015: OECD Indicators.”</p>
+</div>
+<div id="ref-ukhls">
+<p>“Understanding Society: Waves 1-9, 2009-2018.” 2019. <em>UK Data Archive</em>. <a href="https://doi.org/10.5255/UKDA-SN-6614-13">https://doi.org/10.5255/UKDA-SN-6614-13</a>.</p>
+</div>
+<div id="ref-zhou2019">
+<p>Zhou, Muzhi, and Man Yee Kan. 2020. “A new family equilibrium? Changing dynamics between the gender division of labor and fertility in Great Britain, 1991–2017.” <em>Demographic Research</em> 40 (10227): 846–48. <a href="https://doi.org/10.1016/S0140-6736(20)30526-2">https://doi.org/10.1016/S0140-6736(20)30526-2</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+var script = document.createElement("script");
+script.type = "text/javascript";
+var src = "true";
+if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+if (location.protocol !== "file:" && /^https?:/.test(src))
+src = src.replace(/^https?:/, '');
+script.src = src;
+document.getElementsByTagName("head")[0].appendChild(script);
+})();
+</script>
+
+
+</body>
+</html>
