@@ -15,4 +15,4 @@ The uploaded file is the RMarkdown file and related materials used in producing 
 For detailed info about how to create a poster using RMarkdown, please refer to [posterdown_betterland](https://github.com/brentthorne/posterdown/wiki/posterdown_betterland) by [Brent Thorne](https://github.com/brentthorne).
 
 ## Current PDF style :art:
-![](poster_time-familyUK-mz%20_01.png.png)
+![](poster_time-familyUK-mz%20_01.png)
